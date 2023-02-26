@@ -1,0 +1,229 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --bg: #f1f1f1;
+  --accent: #fda300;
+  --link: #606060;
+}
+
+body {
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 22px;
+  background-color: var(--black);
+  border-radius: 30px;
+
+  font-size: 18px;
+  color: var(--white);
+
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover,
+btn:focus {
+  background-color: var(--accent);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Nav */
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-button {
+  display: none;
+}
+
+.nav-link {
+  color: var(--black);
+}
+
+.nav-link.active {
+  color: var(--link);
+}
+
+/* Header */
+
+.header {
+  padding-top: 46px;
+  background-color: var(--bg);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 76px;
+}
+
+.logo {
+  position: relative;
+  padding: 0 12px 3px 0;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--black);
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+/* Header content */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-content {
+  margin-top: 124px;
+  max-width: 500px;
+}
+
+.header-content p {
+  line-height: 2;
+}
+
+.header-heading {
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+/* Services */
+
+.services {
+  padding: 90px 0;
+}
+
+.services-row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+
+.service-card-img {
+  margin-bottom: 30px;
+}
+
+.service-card-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 90px 0;
+  background-color: var(--bg);
+}
+
+.portfolio-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+
+.projec-title {
+  font-size: 18px;
+}
+
+/* Footer */
+
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.container-title {
+  margin-bottom: 40px;
+}
+
+.contacts-content {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.contacts-content p + p {
+  margin-top: 1em;
+}
+
+.contacts-button {
+  margin-bottom: 80px;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  margin-bottom: 40px;
+}
+
+.contacts-footer {
+  color: var(--link);
+}
